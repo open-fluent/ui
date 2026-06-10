@@ -65,11 +65,16 @@ indent_size = 2
 indent_size = 2
 insert_final_newline = true
 
+# YAML files
+[*.{yml,yaml}]
+indent_size = 2
+insert_final_newline = true
+
 # C# files
 [*.cs]
 
 #### File Header Template ####
-file_header_template = This Source Code Form is subject to the terms of the MIT License.\nIf a copy of the MIT was not distributed with this file, You can obtain one at https://opensource.org/licenses/MIT.\nCopyright (C) Leszek Pomianowski and Fluent Framework Contributors.\nAll Rights Reserved.
+file_header_template = This Source Code Form is subject to the terms of the MIT License.\nIf a copy of the MIT was not distributed with this file, You can obtain one at https://opensource.org/licenses/MIT.\nCopyright (C) Leszek Pomianowski and open-fluent Contributors.\nAll Rights Reserved.
 
 #### .NET Coding Conventions ####
 
@@ -118,9 +123,10 @@ dotnet_style_readonly_field = true:warning
 #### C# Coding Conventions ####
 
 # var preferences
-csharp_style_var_elsewhere = false:warning
-csharp_style_var_for_built_in_types = false:none
-csharp_style_var_when_type_is_apparent = false:none
+csharp_style_var_elsewhere = true:suggestion
+csharp_style_var_for_built_in_types = true:suggestion
+csharp_style_var_when_type_is_apparent = true:suggestion
+csharp_style_prefer_target_typed_new = true:suggestion
 
 # Expression-bodied members
 csharp_style_expression_bodied_accessors = false:silent
@@ -392,6 +398,9 @@ dotnet_diagnostic.IDISP026.severity = suggestion
 # Require file header OR A source file contains a header that does not match the required text
 dotnet_diagnostic.IDE0073.severity = error
 
+# Disable warning for missing type specification (allow new() instead of new Type())
+dotnet_diagnostic.IDE0090.severity = none # Use 'new(...)' expression
+
 # StyleCop Code Analysis
 
 dotnet_diagnostic.SA1005.severity = suggestion # Single line comments should begin with a space
@@ -422,6 +431,8 @@ dotnet_diagnostic.SA1413.severity = none
 dotnet_diagnostic.SA1600.severity = none
 dotnet_diagnostic.SA1602.severity = none
 dotnet_diagnostic.SA1611.severity = none
+dotnet_diagnostic.SA1629.severity = none # documentation should end with a period
+dotnet_diagnostic.SA1515.severity = suggestion # blank line after comment
 
 # DocumentationTextMustEndWithAPeriod: Let's enable this rule back when we shift to WinUI3 (v8.x). If we do it now, it would mean more than 400 file changes.
 dotnet_diagnostic.SA1629.severity = warning
@@ -463,6 +474,7 @@ dotnet_diagnostic.ASPIREPROXYENDPOINTS001.severity = none
 csharp_prefer_system_threading_lock = true:suggestion
 csharp_style_prefer_null_check_over_type_check = true:suggestion
 csharp_style_prefer_local_over_anonymous_function = true:suggestion
+object_creation_when_type_evident = target_typed
 dotnet_diagnostic.CA1311.severity = warning
 
 # unreachable code
@@ -481,3 +493,5 @@ dotnet_diagnostic.CS8766.severity = error
 # switch expression not exhaustive
 dotnet_diagnostic.CS8524.severity = warning
 dotnet_diagnostic.CS8509.severity = error
+
+dotnet_diagnostic.RS0030.severity = error # Do not use banned APIs

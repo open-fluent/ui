@@ -9,5 +9,12 @@
   <Folder Name="/Tests/">
     <Project Path="tests/Fluent.Ui.UnitTests/Fluent.Ui.UnitTests.csproj" />
   </Folder>
+  <Project Path="src/Fluent.Charts/Fluent.Charts.csproj" />
+  <Project Path="src/Fluent.Diagrams/Fluent.Diagrams.csproj" />
+  <Project Path="src/Fluent.Documents/Fluent.Documents.csproj" />
+  <Project Path="src/Fluent.Icon/Fluent.Icon.csproj" />
+  <Project Path="src/Fluent.Navigation/Fluent.Navigation.csproj" />
+  <Project Path="src/Fluent.Notifications/Fluent.Notifications.csproj" />
+  <Project Path="src/Fluent.Themes/Fluent.Themes.csproj" />
   <Project Path="src/Fluent.Ui/Fluent.Ui.csproj" />
 </Solution>
