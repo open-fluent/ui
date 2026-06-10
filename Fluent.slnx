@@ -7,9 +7,7 @@
     <File Path="README.md" />
   </Folder>
   <Folder Name="/Tests/">
-    <Project Path="tests/Fluent.Client.AwesomeAssertions.UnitTests/Fluent.Client.AwesomeAssertions.UnitTests.csproj" />
-    <Project Path="tests/Fluent.Client.UnitTests/Fluent.Client.UnitTests.csproj" />
+    <Project Path="tests/Fluent.Ui.UnitTests/Fluent.Ui.UnitTests.csproj" />
   </Folder>
-  <Project Path="src/Fluent.Client.AwesomeAssertions/Fluent.Client.AwesomeAssertions.csproj" />
-  <Project Path="src/Fluent.Client/Fluent.Client.csproj" />
+  <Project Path="src/Fluent.Ui/Fluent.Ui.csproj" />
 </Solution>

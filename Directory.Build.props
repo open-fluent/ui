@@ -5,17 +5,17 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Company>lepo.co</Company>
-    <Authors>lepo.co</Authors>
-    <Product>Fluent Framework</Product>
+    <Company>open-fluent by lepo.co</Company>
+    <Authors>open-fluent by lepo.co</Authors>
+    <Product>Fluent UI Framework</Product>
     <CommonTags>lepo;lepoco;fluent;framework;pomian;pomianowski</CommonTags>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
-    <Copyright>(c) lepo.co | Leszek Pomianowski and Contributors. All rights reserved.</Copyright>
-    <PackageProjectUrl>https://github.com/lepoco/fluent</PackageProjectUrl>
-    <PackageReleaseNotes>https://github.com/lepoco/fluent/releases</PackageReleaseNotes>
+    <Copyright>(c) open-fluent | Leszek Pomianowski and Contributors. All rights reserved.</Copyright>
+    <PackageProjectUrl>https://github.com/open-fluent/ui</PackageProjectUrl>
+    <PackageReleaseNotes>https://github.com/open-fluent/ui/releases</PackageReleaseNotes>
     <PackageIcon>Icon.png</PackageIcon>
-    <PackageIconUrl>https://github.com/lepoco/fluent/main/build/nuget.png</PackageIconUrl>
+    <PackageIconUrl>https://github.com/open-fluent/ui/main/build/nuget.png</PackageIconUrl>
   </PropertyGroup>
 
   <PropertyGroup>
